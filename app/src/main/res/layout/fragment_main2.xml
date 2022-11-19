@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment2"
+    android:background="@color/backgraund_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_select_category_title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/backgraund_main"
+            android:orientation="horizontal"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_category"
+            tools:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayoutSearch"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="10dp">
+
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@drawable/searchview_rounded"
+                app:queryHint="   Search"
+                android:padding="5dp"
+                app:searchHintIcon="@drawable/ic_lens_20"
+                app:searchIcon="@drawable/ic_lens_5"
+                android:layout_weight="1"
+                app:theme="@style/SearchViewStyle"
+                />
+
+            <ImageView
+                android:id="@+id/imageSearchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:src="@drawable/ic_group_8" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

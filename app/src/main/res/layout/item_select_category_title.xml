@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="17dp"
+   android:layout_marginRight="33dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/textViewSelectCategory"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/mark_pro_medium"
+        android:text="Select Caregory"
+        android:textColor="#010035"
+        android:textSize="25sp"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="view all"
+        android:gravity="right"
+        android:textColor="#FF6E4E"
+        android:textSize="15sp"
+        android:fontFamily="@font/mark_pro_medium"/>
+</LinearLayout>
